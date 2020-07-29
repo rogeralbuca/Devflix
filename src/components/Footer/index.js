@@ -1,19 +1,20 @@
 import React from 'react';
 import Logo from '../../assets/img/Logo-D.svg';
 import { FooterBase } from './styles';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <FooterBase>
-      <a href="/">
+      <Link to="/">
         <img src={Logo} alt="Logo DevFlix" />
-      </a>
+      </Link>
       <p>
-        <a href="https://www.linkedin.com/in/roger-albuquerque-69106721/" target="_blank" without rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/roger-albuquerque-69106721/">
           Roger Albuquerque
         </a>
-        &nbsp; &copy; 2020 &nbsp;
-        <a href="https://www.alura.com.br/" target="_blank" without rel="noopener noreferrer">
+        &nbsp; &copy;2020 &nbsp;
+        <a href="https://www.alura.com.br/">
           Imersão React Alura
         </a>
       </p>

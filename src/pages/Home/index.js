@@ -1,14 +1,14 @@
 import React from 'react';
-import Menu from './components/Menu'
-import dadosIniciais from './data/dados_iniciais.json';
-import Banner from './components/Banner';
-import Carousel from './components/Carousel';
-import Footer from './components/Footer';
-import './app.css';
+import Menu from '../../components/Menu'
+import dadosIniciais from '../../data/dados_iniciais.json';
+import Banner from '../../components/Banner';
+import Carousel from '../../components/Carousel';
+import Footer from '../../components/Footer';
+import './styles.css';
 
-function App() {
+function Home() {
   return (
-    <div className="main">
+    <div className="home">
       <Menu />
 
       <Banner
@@ -17,8 +17,9 @@ function App() {
         videoDescription={"Neste vídeo, Vanessa Tonini e Mario Souto explicam isto para você falando sobre como esta ferramenta surgiu, para que ela serve, quais são suas aplicações e relação com outras ferramentas e como começar a trabalhar com ele."}
       />
 
-      { dadosIniciais.categorias.map(categoria => (
+      { dadosIniciais.categorias.map( (categoria, index) => (
         <Carousel
+          key={index}
           ignoreFirstVideo
           category={categoria}
         />
@@ -29,4 +30,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
