@@ -14,9 +14,9 @@ function CadastroVideo() {
   }
 
   const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
+    { value: 'Front End', label: 'Front End' },
+    { value: 'Back End', label: 'Back End' },
+    { value: 'Data Science', label: 'Data Science' }
   ]
   
   const [categorias, setCategorias] = useState([]);
