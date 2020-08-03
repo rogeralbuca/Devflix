@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Menu from '../../../../components/Menu';
-import Footer from '../../../../components/Footer';
+import Menu from '../Menu';
+import Footer from '../Footer';
 
 const Main = styled.main`
     background-color: var(--black);
@@ -12,7 +12,7 @@ const Main = styled.main`
     padding-right: 5%;
 `;
 
-function Formulario( { children } ){
+function PageDefault( { children } ){
     return (
         <>
             <Menu/>
@@ -24,4 +24,4 @@ function Formulario( { children } ){
     )
 }
 
-export default Formulario;
+export default PageDefault;

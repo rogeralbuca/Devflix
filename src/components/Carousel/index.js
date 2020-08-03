@@ -4,7 +4,6 @@ import VideoCard from './components/VideoCard';
 import Slider, { SliderItem } from './components/Slider';
 
 function Carousel({
-  ignoreFirstVideo,
   category,
 }) {
   const categoryTitle = category.titulo;
@@ -27,10 +26,6 @@ function Carousel({
       )}
       <Slider categoryColor={categoryColor}>
         {videos.map((video, index) => {
-          if (ignoreFirstVideo && index === 0) {
-            return null;
-          }
-
           return (
             <SliderItem key={video.titulo}>
               <VideoCard

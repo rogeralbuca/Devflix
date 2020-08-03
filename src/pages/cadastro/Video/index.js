@@ -1,15 +1,15 @@
 import React from 'react';
-import Formulario from './Formulario';
+import PageDefault from '../../../components/PageDefault';
 import { Link } from 'react-router-dom';
 
 function CadastroVideo(){
     return (
-        <Formulario>
+        <PageDefault>
             <h1>Cadastro de Vídeos</h1>
-            <Link to={'/'}>
-                Home
+            <Link to={'/Categoria'}>
+                Categoria
             </Link>
-        </Formulario>
+        </PageDefault>
     )
 }
 
