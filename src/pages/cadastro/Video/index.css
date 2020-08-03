@@ -1,8 +1,9 @@
 form {
-  margin: auto;
-  width: 100%;
+  width: 500px;
   border: none;
   border-radius: 4px;
+  flex-direction: column;
+  justify-content: left;
 }
 
 label {
@@ -12,7 +13,7 @@ label {
 }
 
 input {
-  width: 350px;
+  width: 100%;;
   display: block;
   border-radius: 4px;
   white-space: normal;
@@ -21,7 +22,7 @@ input {
   padding: 13px 15px;
   text-align: left;
   transition: border .5s;
-  margin-right: 15px;
+  margin-bottom: 10px;
   outline: none;
 }
 
@@ -45,7 +46,7 @@ button {
   display: inline-block;
   transition: opacity .3s;
   background-color: var(--primary);
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 button:focus,
@@ -75,4 +76,34 @@ button:hover {
   outline: none;
   outline:none!important;
   border-top-color: orange !important;
+}
+
+.select {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: hsl(0,0%,100%);
+  border-color: hsl(0,0%,80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 38px;
+  outline: 0 !important;
+  position: relative;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  box-sizing: border-box;
 }

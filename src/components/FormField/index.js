@@ -6,7 +6,7 @@ function FormField({label, name, type, value, onChange, tag, className}) {
 
   return (
     <div>
-        {label}
+        <label>{label}</label>
         <TagName
           name={name}
           type={type}
