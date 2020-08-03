@@ -95,11 +95,11 @@ function CadastroVideo() {
 
       </form>
 
-      {categorias.map((categoria, index) =>
+      {/* {categorias.map((categoria, index) =>
         <p>
           {`${categoria.nome} ${categoria.cor} ${categoria.titulo}`}
         </p>
-      )}
+      )} */}
 
     </PageDefault>
   )
